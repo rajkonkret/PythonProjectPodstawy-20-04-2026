@@ -69,3 +69,11 @@ print(tekst_format)
 # \t - tab
 # \n - nowa linia
 # \b - backspace
+
+starszy = "witaj %s!"  # %s - string
+print(starszy % imie)  # witaj Radek!
+
+print("witaj {}!".format("Radek"))  # witaj Radek!
+print(f"witaj {imie}!")  # witaj Radek!
+
+
