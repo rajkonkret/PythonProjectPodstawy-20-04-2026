@@ -64,3 +64,8 @@ print(tekst_format)  # Mam na imię Radek i lubię Pythona
 
 tekst_format = f"\tMam na imię {imie}\n i lubię Pythona.\b"
 print(tekst_format)
+# "	Mam na imię Radek
+#  i lubię Pythona"
+# \t - tab
+# \n - nowa linia
+# \b - backspace
