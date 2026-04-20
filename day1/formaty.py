@@ -33,6 +33,11 @@ print(x)  # 3.8769
 y = round(x)
 print(y)  # 4
 
-z = round(x, 2)
+z = round(x, 2)  # 2 - liczba miejsc po przecinku
 print(f"{z=}")  # z=3.88
 print(type(z))  # <class 'float'>
+
+print(f"Używamy wersji Pythona {wersja}")  # Używamy wersji Pythona 3.90001
+print(f"Używamy wersji Pythona {wersja:.2f}")  # Używamy wersji Pythona 3.90
+print(f"Używamy wersji Pythona {wersja:.1f}")  # Używamy wersji Pythona 3.9
+print(f"Używamy wersji Pythona {wersja:.0f}")  # Używamy wersji Pythona 4
