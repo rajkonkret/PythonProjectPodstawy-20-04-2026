@@ -50,3 +50,28 @@ print(sys.int_info)
 print(int("39"))  # rzutowanie na typ integer
 print(int("39") + 39)  # 78
 print("39" + str(39))  # 3939
+
+print("'xxx'")  # 'xxx'
+print('"xxx"')  # "xxx"
+
+# zmienna
+# pudełko, wagonik na dane
+
+# typowanie dynamiczne
+name = "Radek"
+print(name)  # Radek
+print(type(name))  # <class 'str'>
+
+name = 90
+print(name)  # 90
+print(type(name))  # <class 'int'>
+
+print(50 * "90")
+# 9090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090
+
+# podpowiedzi typów
+name: str = "Radek"
+print(name)  # Radek
+name = 90
+print(name)  # 90
+print(type(name)) # <class 'int'>
