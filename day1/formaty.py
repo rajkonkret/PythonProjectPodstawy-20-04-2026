@@ -54,5 +54,5 @@ print(f'Nasza duża liczba: {liczba:_}'.replace("_", " "))  # Nasza duża liczba
 print(f'Nasza duża liczba: {liczba:_}'.replace("_", "."))  # Nasza duża liczba: 7.891.234.567.654.321.890
 
 liczba = 1_500_000_000_000
-print(liczba)  # 1500000000000
+print(liczba)  # 1500000000000ł
 print(type(liczba))  # <class 'int'>
