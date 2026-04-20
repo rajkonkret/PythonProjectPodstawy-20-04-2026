@@ -50,4 +50,14 @@ print(type(encode_s))  # <class 'bytes'>, typ bajtowy
 
 print(encode_s.decode("utf-8"))  # Witaj Świecie
 
+imie = "Radek"
+print(len(imie))  # długość tekstu, 5
+dane = "Świecie"
+print(len(dane)),  # 7
 
+# Mam na imię Radek....
+print("Mam na imię " + imie)  # Mam na imię Radek
+
+# f-string, wstrzyknięcie zawartości zmiennej do tekstu {}
+tekst_format = f"Mam na imię {imie} i lubię Pythona"
+print(tekst_format)  # Mam na imię Radek i lubię Pythona
