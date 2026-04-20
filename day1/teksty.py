@@ -33,4 +33,4 @@ print(tekst.count("e"))  # występuje 2 razy
 print(tekst.lower().count("w"))  # 2 razy
 # Witaj Świecie
 # 0123456789....
-print(tekst.count("j", 0, 4))# występuje 0  razy, z prawej strony otwarty, 0123 indeksy
+print(tekst.count("j", 0, 4))  # występuje 0  razy, z prawej strony otwarty, 0123 indeksy
