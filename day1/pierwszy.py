@@ -74,4 +74,19 @@ name: str = "Radek"
 print(name)  # Radek
 name = 90
 print(name)  # 90
-print(type(name)) # <class 'int'>
+print(type(name))  # <class 'int'>
+
+# mypy - sprawdzenie typów
+# pip - menadżer pakietów
+# pip install mypy
+# pip list - lista zainstalowanych pakietów
+# mypy .\day1\pierwszy.py
+
+# typing_extensions 4.15.0
+# (.venv) PS C:\Users\CSComarch\PycharmProjects\PythonProjectPodstawy-20-04-2026> mypy .\day1\pierwszy.py
+# day1\pierwszy.py:65: error: Incompatible types in assignment (expression has type "int", variable has type "str")  [assignment]
+# day1\pierwszy.py:73: error: Name "name" already defined on line 61  [no-redef]
+# day1\pierwszy.py:75: error: Incompatible types in assignment (expression has type "int", variable has type "str")  [assignment]
+# Found 3 errors in 1 file (checked 1 source file)
+# (.venv) PS C:\Users\CSComarch\PycharmProjects\PythonProjectPodstawy-20-04-2026>
+# ctrl alt l - formatowanie wg pep8
