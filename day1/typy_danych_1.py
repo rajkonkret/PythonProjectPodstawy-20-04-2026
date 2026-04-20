@@ -25,3 +25,6 @@ print(len(str(wiek ** rok)))  # długośc 3388
 # print(len(str(wiek ** rok ** 2))) # długośc 3388
 # ValueError: Exceeds the limit (4300 digits) for integer string conversion;
 # use sys.set_int_max_str_digits() to increase the limit
+
+print(54 - 5 * 43 + 4 / 2 + 4 / 2)  # -157.0
+print(54 - 5 * 43 + (4 / 2 + 4) / 2)  # -158.0
