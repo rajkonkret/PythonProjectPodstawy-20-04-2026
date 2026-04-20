@@ -76,4 +76,16 @@ print(starszy % imie)  # witaj Radek!
 print("witaj {}!".format("Radek"))  # witaj Radek!
 print(f"witaj {imie}!")  # witaj Radek!
 
+print("Witaj", imie)  # Witaj Radek
+# sep
+# string inserted between values, default a space.
+# end
+# string appended after the last value, default a newline.
 
+print("""
+    tekst
+    wielolinijkowy
+    
+    """)
+# "    tekst
+#     wielolinijkowy"
