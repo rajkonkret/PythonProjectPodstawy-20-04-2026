@@ -2,7 +2,7 @@
 # snake_case - konwencja nazewnicza
 import sys
 
-print("Hello World")
+print("Hello World")  # wypisz/wydrukuj
 print('Witaj Świecie')
 # blake8 - formater bardziej restrykcyjny
 
@@ -34,11 +34,19 @@ print(type("Radek"))  # <class 'str'>, string, tekstowy
 print("39" + "89")  # 3989, konkatenacja, łaczy teksty
 print("Radek" + "1")  # Radek1
 
-print(30 + 89) # 119
-print(type(39)) # <class 'int'> - całkowite
+print(30 + 89)  # 119
+print(type(39))  # <class 'int'> - całkowite
 
 print(sys.int_info)
 # sys.int_info(bits_per_digit=30,
 # sizeof_digit=4,
 # default_max_str_digits=4300,
 # str_digits_check_threshold=640)
+
+# print("39" + 30) # TypeError: can only concatenate str (not "int") to str
+# silne typowanie - nie zmainia typów
+
+# rzutowanie typów
+print(int("39"))  # rzutowanie na typ integer
+print(int("39") + 39)  # 78
+print("39" + str(39))  # 3939
