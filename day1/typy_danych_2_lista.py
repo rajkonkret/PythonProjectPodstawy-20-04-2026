@@ -72,3 +72,5 @@ print(lista_15[::3])  # [start:stop:krok], [0, 3, 6, 9, 12]
 
 # wwyświetla listę w odwrotnej kolejności
 print(lista_15[::-1])  # [14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+
+print(list(range(0, 15, 2)))  # [0, 2, 4, 6, 8, 10, 12, 14], (start, stop, krok)
