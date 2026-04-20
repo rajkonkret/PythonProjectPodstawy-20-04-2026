@@ -89,3 +89,6 @@ print("""
     """)
 # "    tekst
 #     wielolinijkowy"
+
+"""Komentarz 
+    wielolinijkowy"""
