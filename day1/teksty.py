@@ -61,3 +61,6 @@ print("Mam na imię " + imie)  # Mam na imię Radek
 # f-string, wstrzyknięcie zawartości zmiennej do tekstu {}
 tekst_format = f"Mam na imię {imie} i lubię Pythona"
 print(tekst_format)  # Mam na imię Radek i lubię Pythona
+
+tekst_format = f"\tMam na imię {imie}\n i lubię Pythona.\b"
+print(tekst_format)
