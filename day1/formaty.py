@@ -46,3 +46,9 @@ print(f"{user:<10}")  # "Tomek     "
 print(f"{user:>15}")  # "          Tomek"
 print(f"{user:^20}")  # "       Tomek        "
 print(f"{user:.^20}")  # ".......Tomek........"
+
+print(liczba)  # 7891234567654321890
+print(f'Nasza duża liczba: {liczba:,}')  # Nasza duża liczba: 7,891,234,567,654,321,890
+print(f'Nasza duża liczba: {liczba:_}')  # Nasza duża liczba: 7_891_234_567_654_321_890
+print(f'Nasza duża liczba: {liczba:_}'.replace("_", " "))  # Nasza duża liczba: 7 891 234 567 654 321 890
+print(f'Nasza duża liczba: {liczba:_}'.replace("_", "."))  # Nasza duża liczba: 7.891.234.567.654.321.890
