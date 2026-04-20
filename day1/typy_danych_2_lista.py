@@ -74,3 +74,18 @@ print(lista_15[::3])  # [start:stop:krok], [0, 3, 6, 9, 12]
 print(lista_15[::-1])  # [14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
 
 print(list(range(0, 15, 2)))  # [0, 2, 4, 6, 8, 10, 12, 14], (start, stop, krok)
+
+# python nie ma typu array (tablice)
+tablica = [[1, 2], [3, 4]]
+print(tablica)  # [[1, 2], [3, 4]]
+# numpy - biblioteka do pracy z tablicami/macierzami
+
+# ['Radek', 'Tomek', 'Marek', 'Sebastian', 'Anna', 'Magda']
+
+# nadpisanie elementu na wskazanym miejscu (indeks)
+lista[2] = "Asia"
+print(lista)  # ['Radek', 'Tomek', 'Asia', 'Sebastian', 'Anna', 'Magda']
+
+# wpisanie elementu pomiędzy inne elementy na wskazanym indeksie
+lista.insert(1, 'Ola')
+print(lista)  # ['Radek', 'Ola', 'Tomek', 'Asia', 'Sebastian', 'Anna', 'Magda']
