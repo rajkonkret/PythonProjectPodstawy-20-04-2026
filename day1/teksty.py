@@ -90,5 +90,6 @@ print("""
 # "    tekst
 #     wielolinijkowy"
 
+# komentarz wielolinijowy, dokumentacja (docstring)
 """Komentarz 
     wielolinijkowy"""
