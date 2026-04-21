@@ -106,5 +106,14 @@ lista.remove("Radek")
 print(lista)
 # ['Ola', 'Asia', 'Sebastian', 'Anna', 'Magda', 'Radek']
 print(lista[0])  # Ola
+print(lista.remove("Magda"))  # None
 
+# usunięcie po indeksie
+# pop(), usunie po indeksie i zwróci usunięty element
+print(lista.pop(2))  # Sebastian
+print(lista)  # ['Ola', 'Asia', 'Anna', 'Radek']
+zmienna = lista.pop(-1)
+print(zmienna)  # Radek
+print(lista)  # ['Ola', 'Asia', 'Anna']
 
+print(lista.pop())  # Anna, usunie ostatni element
