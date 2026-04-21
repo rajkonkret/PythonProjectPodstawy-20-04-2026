@@ -41,6 +41,7 @@ print(dictionary)  # {'imie': ['Radek', 'Tomek', 'Magda'], 'wiek': 50}
 # wypisać Tomka
 print(dictionary['imie'])  # ['Radek', 'Tomek', 'Magda'] [1]
 print(dictionary['imie'][1])  # Tomek
+
 print(dictionary['imie'][1].lower())  # tomek
 print(dictionary['imie'][::-1])  # ['Magda', 'Tomek', 'Radek']
 
@@ -90,4 +91,17 @@ print(dict_small)  # {'x': 2, 'y': 3, 'z': 6}
 # print(eval("5 * 8"))  # 40
 
 # napisac apliakcję słownik pol-ang
+# pol_ang = {'pies': "dog", "kot": 'cat', "dach": "roof"}
+# print("Znam takie słowa:", pol_ang.keys())
+# odp = input("Podaj słówko do przetłumaczenia:")
+# print(f"""
+# Prawidłowa odpowiedź dla: {odp}
+# to: {pol_ang.get(odp.strip().casefold(), "nie ma")}
+# """)
+# Podaj słówko do przetłumaczenia:kot
+#
+# Prawidłowa odpowiedź dla: kot
+# to: cat
 
+# \N{name} - Znak Unicode o podanej nazwie
+print("\N{LATIN SMALL LETTER SHARP S}")  # ->  ß
