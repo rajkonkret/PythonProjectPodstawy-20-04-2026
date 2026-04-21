@@ -66,5 +66,15 @@ print(dictionary)
 
 # [('imie', 'Radek'), ('wiek', 50)] - lista krotek
 dict_small = {'x': 2}
-dict_small.update([("y", 3), ("z", 6)])
+dict_small.update([("y", 3), ("z", 6)])  # dane jako lista krotek
 print(dict_small)  # {'x': 2, 'y': 3, 'z': 6}
+
+# input() - możliwość wprowadzenia danych do komputera np.:  z klawiatury
+
+# input zwraca str
+# tekst = input("Podaj imie:")
+# print(tekst)
+# # Podaj imie:Radek
+# # Radek
+
+# napisac apliakcje kalkulator
