@@ -105,3 +105,6 @@ print(lista)
 lista.remove("Radek")
 print(lista)
 # ['Ola', 'Asia', 'Sebastian', 'Anna', 'Magda', 'Radek']
+print(lista[0])  # Ola
+
+
