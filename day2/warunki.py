@@ -87,3 +87,47 @@ print(f"Rabat wynosi: {rabat}")  # Rabat wynosi: 25
 # operator warunkowy
 rabat = 25 if sum_zam > 100 else 0
 print(f"Rabat wynosi: {rabat}")  # Rabat wynosi: 25
+
+# napisac test z...
+# trzy pytania
+# punktacja
+
+punkty = 0
+odp = input("Podaj rok Chrztu Polski: ")  # -> str
+if odp.strip().casefold() == '966':  # == porównanie
+    print("Odpowiedź prawidłowa")
+    # punkty = punkty + 1
+    punkty += 1
+else:
+    print("Masz w ksiażce na stronie 26")
+# Podaj rok Chrztu Polski: 966
+# Odpowiedź prawidłowa
+
+odp = input("Jaka jest stolica Polski: ")  # -> str
+if odp.strip().casefold() == 'Warszawa'.casefold():  # == porównanie
+    print("Odpowiedź prawidłowa")
+    punkty += 1
+else:
+    print("Masz w ksiażce na stronie 29")
+
+odp = input("Jaka jest dzień tygodnia: ")  # -> str
+if odp.strip().casefold() == 'wtorek':  # == porównanie
+    print("Odpowiedź prawidłowa")
+    punkty += 1
+else:
+    print("Masz w kalendarzu")
+
+print(f"Zdobyłeś: {punkty} pkt.")
+# spam += 1    spam = spam + 1
+# spam -= 1    spam = spam - 1
+# spam *= 1    spam = spam * 1
+# spam /= 1    spam = spam / 1
+# spam %= 1    spam = spam % 1
+
+# Podaj rok Chrztu Polski: 966
+# Odpowiedź prawidłowa
+# Jaka jest stolica Polski: warszawa
+# Odpowiedź prawidłowa
+# Jaka jest dzień tygodnia: wtorek
+# Odpowiedź prawidłowa
+# Zdobyłeś: 3 pkt.
