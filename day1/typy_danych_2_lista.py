@@ -153,3 +153,61 @@ print(lista_copy)
 print(id(lista))  # 2214191878080
 print(id(lista2))  # 2214191878080
 print(id(lista_copy))  # 2214196227456
+
+lista2 = lista_copy  # nadpisałes zmienna
+print(lista)
+print(lista2)
+# []
+# ['Ola', 'Asia']
+
+liczby = [54, 999, 12.34, 34, 567, 999]
+print(liczby)  # [54, 999, 12.34, 34, 567, 999]
+print(type(liczby))  # <class 'list'>
+
+liczby.sort()
+print(liczby)  # [12.34, 34, 54, 567, 999, 999]
+
+liczby.append("A")
+print(liczby)  # [12.34, 34, 54, 567, 999, 999, 'A']
+print(type(liczby))  # <class 'list'>
+
+# liczby.sort() # TypeError: '<' not supported between instances of 'str' and 'int'
+
+print(ord("A"))  # kod znaku, 65
+# print(ord("AB"))  # TypeError: ord() expected a character, but string of length 2 found
+
+print(lista_copy)  # ['Ola', 'Asia']
+lista_copy.sort()
+print(lista_copy)  # ['Asia', 'Ola']
+
+lista_copy.sort(reverse=True)  # sortowanie i odwrócenie
+print(lista_copy)  # ['Ola', 'Asia']
+
+lista_copy.append("Tomek")
+print(lista_copy)  # ['Ola', 'Asia', 'Tomek']
+lista_copy.reverse()
+print(lista_copy)  # ['Tomek', 'Asia', 'Ola'], tylko odwróćenie
+
+print(liczby)  # [12.34, 34, 54, 567, 999, 999, 'A']
+liczby[3] = 666  #
+print(liczby[0:3])  # [12.34, 34, 54] 0,1,2 indeksy
+print(liczby[-3])  # 999
+print(liczby)  # [12.34, 34, 54, 666, 999, 999, 'A']
+
+tekst = "Pyth on."
+# stworzyc listę list(), []
+
+lista = [tekst]
+print(type(lista))
+print(lista)  # ['Pyth on.']
+
+# rozpakowanie sekwencji
+lista_tekst = list(tekst)
+print(lista_tekst)  # ['P', 'y', 't', 'h', ' ', 'o', 'n', '.']
+print(type(lista_tekst))
+
+print(lista + lista_tekst)  # ['Pyth on.', 'P', 'y', 't', 'h', ' ', 'o', 'n', '.']
+
+krotka = tuple(lista_copy)
+print(type(krotka))  # <class 'tuple'>
+print(krotka)  # ('Tomek', 'Asia', 'Ola')
