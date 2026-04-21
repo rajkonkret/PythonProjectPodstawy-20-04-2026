@@ -94,4 +94,14 @@ lista_darek = []
 lista_darek.insert(1, "Darek")
 print(lista_darek)  # ['Darek'] -> indeks 0
 
-# usunięcie elemntu z listy
+# usunięcie elemntu z listy, pierwszy z lewej
+lista.remove("Tomek")
+print(lista)  # ['Radek', 'Ola', 'Asia', 'Sebastian', 'Anna', 'Magda']
+
+# dodac element jaki juz jest na liscie, usunięcie tego elementu
+lista.append("Radek")
+print(lista)
+# ['Radek', 'Ola', 'Asia', 'Sebastian', 'Anna', 'Magda', 'Radek']
+lista.remove("Radek")
+print(lista)
+# ['Ola', 'Asia', 'Sebastian', 'Anna', 'Magda', 'Radek']
