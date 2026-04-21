@@ -33,3 +33,34 @@ print(tupla_imiona.index("Radek"))  # index numer 2
 print(tupla_imiona.count("Radek"))  # występuje 1 raz
 
 print(len(tupla_imiona))  # długośc 4
+
+tup = 1, 2
+print(type(tup))  # <class 'tuple'>
+
+# a - pierwsza wartośc, b - druga wartość
+a = tup[0]
+b = tup[1]
+print(a, b)  # 1 2
+
+# rozpakowanie tupli
+a, b = 1, 2  # tupla w pamięci
+print(a, b)  # 1 2
+
+a, b = tup
+print(a, b)  # 1 2
+
+a, b = b, a  # zamiana miejscami wartosci zmiennych
+print(b, a)  # 1 2
+
+# ('Zenek', 'Marek', 'Radek', 'Ania')
+# name1, name2, name3
+# name1, name2, name3 = tupla_imiona # ValueError: too many values to unpack (expected 3, got 4)
+name1, name2, *name3 = tupla_imiona
+print(name1, name2, name3)  # Zenek Marek ['Radek', 'Ania']
+
+name1, *name2, name3 = tupla_imiona
+print(name1, name2, name3)  #
+# Zenek ['Marek', 'Radek'] Ania
+
+*name1, name2, name3 = tupla_imiona
+print(name1, name2, name3)  # ['Zenek', 'Marek'] Radek Ania
