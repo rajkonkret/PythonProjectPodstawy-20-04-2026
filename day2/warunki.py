@@ -23,3 +23,21 @@ if odp:  # blok programu wykonany gdy warunek jest spełniony -> True
     print("Brawo")
 
 print("Dalsza częśc programu")
+
+odp = "Radek"
+if odp:
+    print("Dane zostały wczytane")
+# Dane zostały wczytane
+
+if odp == "Radek":  # == porównanie
+    print('Jestem Radek')
+# Jestem Radek
+
+odp = 0
+if odp:
+    print("Działa")
+else: # w innym przypadku, wartość domyślna
+    print("Zero -> False")
+# Zero -> False
+
+a = "Radek"
