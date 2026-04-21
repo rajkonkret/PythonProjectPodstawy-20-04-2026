@@ -74,4 +74,22 @@ print(zbior - zbior_2)  # {24, 777, 22, 25}
 print(zbior.difference(zbior_2))  # {24, 777, 22, 25}
 print(zbior_2.difference(zbior))  # {667, 52, 12.34, 62}
 
+# łączy zbiory, zmienia bazowy !!!
+zbior.update(zbior_2)
+print(zbior)
+# {777, 11, 44, 12.34, 18, 52, 22, 24, 25, 667, 62}
 
+krotka = tuple(zbior)
+print(krotka)
+# (777, 11, 44, 12.34, 18, 52, 22, 24, 25, 667, 62)
+
+lista = list(zbior)
+print(lista)
+# [777, 11, 44, 12.34, 18, 52, 22, 24, 25, 667, 62]
+
+# spradzenie czy dany eleemnt jest w kolekcji
+# in
+print(667 in zbior)  # True
+print(667 in lista)  # True
+print(667 in krotka)  # True
+print(778 in krotka)  # False
