@@ -117,3 +117,7 @@ print(zmienna)  # Radek
 print(lista)  # ['Ola', 'Asia', 'Anna']
 
 print(lista.pop())  # Anna, usunie ostatni element
+print(lista)  # ['Ola', 'Asia']
+
+# sprawdzenie indexu dla danego eleemntu, pierwszy od lewej
+print(lista.index("Ola"))  # index 0
