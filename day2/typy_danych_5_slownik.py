@@ -78,3 +78,12 @@ print(dict_small)  # {'x': 2, 'y': 3, 'z': 6}
 # # Radek
 
 # napisac apliakcje kalkulator
+a = int(input("Podaj pierwszą liczbę:"))
+b = input("Podaj drugą liczbę:")
+print(a + float(b))
+# Podaj pierwszą liczbę:4
+# Podaj drugą liczbę:5
+# 9.0
+
+# eval()
+print(eval("5 * 8"))  # 40
