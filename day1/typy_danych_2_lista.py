@@ -1,4 +1,5 @@
 # kolekcje
+from sys import base_prefix
 
 # lista - przechowuje dowolną ilośc danych, różnego typu na raz
 # zachowuje kolejnośc podczas dodawania elementów
@@ -121,3 +122,34 @@ print(lista)  # ['Ola', 'Asia']
 
 # sprawdzenie indexu dla danego eleemntu, pierwszy od lewej
 print(lista.index("Ola"))  # index 0
+
+a = 1
+b = 3
+a = b
+print(f"{a=}, {b=}")  # a=3, b=3
+
+b = 9
+print(f"{a=}, {b=}")  # a=3, b=9
+
+lista2 = lista  # kopia referencji, kopia adresu
+lista_copy = lista.copy()  # kopia elementów listy do nowej listy
+
+print(lista2)
+print(lista)
+print(lista_copy)
+# ['Ola', 'Asia']
+# ['Ola', 'Asia']
+# ['Ola', 'Asia']
+
+lista.clear()
+print(lista2)
+print(lista)
+print(lista_copy)
+# []
+# []
+# ['Ola', 'Asia']
+
+# id() pokazuje referencje
+print(id(lista))  # 2214191878080
+print(id(lista2))  # 2214191878080
+print(id(lista_copy))  # 2214196227456
