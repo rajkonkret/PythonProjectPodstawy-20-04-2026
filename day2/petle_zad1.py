@@ -36,3 +36,9 @@ print(lista3)  # [0, 2, 4, 6, 8]
 # list comprehensions
 lista3 = [j for j in range(10) if j % 2 == 0]
 print(lista3)  # [0, 2, 4, 6, 8]
+
+for i in range(len(lista3)):
+    pass
+
+for c in lista3:  # podstawia wszystkie kolejne elemnty z listy
+    print(c)
