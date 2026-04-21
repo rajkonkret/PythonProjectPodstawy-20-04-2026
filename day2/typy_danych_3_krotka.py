@@ -64,3 +64,18 @@ print(name1, name2, name3)  #
 
 *name1, name2, name3 = tupla_imiona
 print(name1, name2, name3)  # ['Zenek', 'Marek'] Radek Ania
+
+# sorted() - sortowanie, zwraca nową listę
+print(sorted(tupla_imiona))  # ['Ania', 'Marek', 'Radek', 'Zenek']
+print(tupla_imiona)  # ('Zenek', 'Marek', 'Radek', 'Ania') bez zmian
+
+sortowana = sorted(tupla_imiona)
+print(sortowana)  # ['Ania', 'Marek', 'Radek', 'Zenek']
+print(id(sortowana))  # 2520013050880
+print(id(tupla_imiona))  # 2520015351184
+
+# nie zmienia oryginalnej tupli
+print(tupla_imiona)  # ('Zenek', 'Marek', 'Radek', 'Ania')
+
+lista = list(tupla_imiona)
+print(lista)  # ['Zenek', 'Marek', 'Radek', 'Ania']
