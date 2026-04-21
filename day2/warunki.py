@@ -11,7 +11,9 @@ if odp: print("test")  # test
 
 if odp:
     print("Test")  # Test
-
+# debugger - narzędzie do wykonywania kodu krok po kroku, ułątwia wyszukiwanie błedów
+# pułapka - miejsce gdzie program ma się zatrzymać
+odp = False
 if odp:  # blok programu wykonany gdy warunek jest spełniony -> True
     print("Brawo")
     # print("Brawo") # IndentationError: unexpected indent
