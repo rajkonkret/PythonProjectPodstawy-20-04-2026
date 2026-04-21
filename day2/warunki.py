@@ -91,33 +91,33 @@ print(f"Rabat wynosi: {rabat}")  # Rabat wynosi: 25
 # napisac test z...
 # trzy pytania
 # punktacja
-
-punkty = 0
-odp = input("Podaj rok Chrztu Polski: ")  # -> str
-if odp.strip().casefold() == '966':  # == porównanie
-    print("Odpowiedź prawidłowa")
-    # punkty = punkty + 1
-    punkty += 1
-else:
-    print("Masz w ksiażce na stronie 26")
-# Podaj rok Chrztu Polski: 966
-# Odpowiedź prawidłowa
-
-odp = input("Jaka jest stolica Polski: ")  # -> str
-if odp.strip().casefold() == 'Warszawa'.casefold():  # == porównanie
-    print("Odpowiedź prawidłowa")
-    punkty += 1
-else:
-    print("Masz w ksiażce na stronie 29")
-
-odp = input("Jaka jest dzień tygodnia: ")  # -> str
-if odp.strip().casefold() == 'wtorek':  # == porównanie
-    print("Odpowiedź prawidłowa")
-    punkty += 1
-else:
-    print("Masz w kalendarzu")
-
-print(f"Zdobyłeś: {punkty} pkt.")
+#
+# punkty = 0
+# odp = input("Podaj rok Chrztu Polski: ")  # -> str
+# if odp.strip().casefold() == '966':  # == porównanie
+#     print("Odpowiedź prawidłowa")
+#     # punkty = punkty + 1
+#     punkty += 1
+# else:
+#     print("Masz w ksiażce na stronie 26")
+# # Podaj rok Chrztu Polski: 966
+# # Odpowiedź prawidłowa
+#
+# odp = input("Jaka jest stolica Polski: ")  # -> str
+# if odp.strip().casefold() == 'Warszawa'.casefold():  # == porównanie
+#     print("Odpowiedź prawidłowa")
+#     punkty += 1
+# else:
+#     print("Masz w ksiażce na stronie 29")
+#
+# odp = input("Jaka jest dzień tygodnia: ")  # -> str
+# if odp.strip().casefold() == 'wtorek':  # == porównanie
+#     print("Odpowiedź prawidłowa")
+#     punkty += 1
+# else:
+#     print("Masz w kalendarzu")
+#
+# print(f"Zdobyłeś: {punkty} pkt.")
 # spam += 1    spam = spam + 1
 # spam -= 1    spam = spam - 1
 # spam *= 1    spam = spam * 1
@@ -131,3 +131,31 @@ print(f"Zdobyłeś: {punkty} pkt.")
 # Jaka jest dzień tygodnia: wtorek
 # Odpowiedź prawidłowa
 # Zdobyłeś: 3 pkt.
+
+# zasymulujemy system zbierania logów
+# zmienna: typ systemu -> console, email, inny
+# console: "Stało się coś strasznego"
+# email: "System email"
+# do listy błedów dodac tłumaczenie błedu
+# poziomy błędów: error, medium, inny
+
+lista_b = []
+alert_system = "email"
+error_level = "medium"
+
+if alert_system == "console":
+    print("Stało się coś strasznego")
+elif alert_system == "email":
+    print('System email')
+    if error_level == "error":
+        lista_b.append("Krytyczny")
+    elif error_level == "medium":
+        lista_b.append("Ostrzeżenie")
+    else:
+        lista_b.append("inny")
+else:
+    print("Inny system")
+
+print(lista_b)
+# System email
+# ['Krytyczny']
