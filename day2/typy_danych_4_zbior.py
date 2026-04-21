@@ -54,3 +54,14 @@ print(id(zbior))
 print(id(zbior_copy))
 # 2174014872864
 # 2174012117216
+
+zbior_2 = {667, 11, 44, 12.34, 18, 52, 667, 62}  # zbiór
+print(zbior_2)  # {18, 667, 52, 11, 44, 12.34, 62}
+print(type(zbior_2))  # <class 'set'>
+
+# opracje na zbiorach
+
+# suma zbiorów, zwraca nowy zbiór
+print(zbior | zbior_2)  # {777, 11, 44, 12.34, 18, 52, 22, 24, 25, 667, 62}
+print(zbior.union(zbior_2))  # {777, 11, 44, 12.34, 18, 52, 22, 24, 25, 667, 62}
+
