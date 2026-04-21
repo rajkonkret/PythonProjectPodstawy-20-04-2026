@@ -93,3 +93,5 @@ print(lista)  # ['Radek', 'Ola', 'Tomek', 'Asia', 'Sebastian', 'Anna', 'Magda']
 lista_darek = []
 lista_darek.insert(1, "Darek")
 print(lista_darek)  # ['Darek'] -> indeks 0
+
+# usunięcie elemntu z listy
