@@ -65,3 +65,13 @@ print(type(zbior_2))  # <class 'set'>
 print(zbior | zbior_2)  # {777, 11, 44, 12.34, 18, 52, 22, 24, 25, 667, 62}
 print(zbior.union(zbior_2))  # {777, 11, 44, 12.34, 18, 52, 22, 24, 25, 667, 62}
 
+# część wspólna
+print(zbior & zbior_2)  # {18, 11, 44}
+print(zbior.intersection(zbior_2))  # {18, 11, 44}
+
+# różnica zbiorow
+print(zbior - zbior_2)  # {24, 777, 22, 25}
+print(zbior.difference(zbior_2))  # {24, 777, 22, 25}
+print(zbior_2.difference(zbior))  # {667, 52, 12.34, 62}
+
+
