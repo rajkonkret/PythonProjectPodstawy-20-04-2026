@@ -138,3 +138,41 @@ for i, o in enumerate(imiona, start=1):
 # 4 Marek
 
 imiona = ["Radek", "Tomek", "Agata", "Marek"]
+# imiona = ["Radek", "Tomek", "Agata", "Marek", 'Asia']
+wiek = [44, 56, 23, 38]
+
+# Radek 44
+for i in range(len(imiona)):
+    print(imiona[i], wiek[i])
+# Radek 44
+# Tomek 56
+# Agata 23
+# Marek 38
+
+for p in imiona:
+    print(p, wiek[imiona.index(p)])
+# Radek 44
+# Tomek 56
+# Agata 23
+# Marek 38
+# IndexError: list index out of range dla róznych długości list
+
+
+imiona = ["Radek", "Tomek", "Agata", "Marek", 'Asia']
+wiek = [44, 56, 23, 38]
+# zip() - łączy kolekcje
+for i in zip(imiona, wiek):
+    print(i)
+# ('Radek', 44)
+# ('Tomek', 56)
+# ('Agata', 23)
+# ('Marek', 38)
+
+for i, w in zip(imiona, wiek):
+    print(i, w)
+# Radek 44
+# Tomek 56
+# Agata 23
+# Marek 38
+
+# 0 Radek 44
