@@ -14,4 +14,11 @@
 #     't'       text mode (default)
 #     '+'       open a disk file for updating (reading and writing)
 #     ========= ===============================================================
-with open("test.log", )
+
+# w - tworzy nowy plik
+# gdy plik istnieje zostania nadpisany (skasowany)
+with open("test.log", "w") as f:  # pod f dostaniemy ten filehandler
+    f.write("Powitanie\n")
+    f.write("Jeszcze jedno\n")
+
+# f.write("") # ValueError: I/O operation on closed file.
