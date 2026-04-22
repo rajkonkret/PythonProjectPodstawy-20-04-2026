@@ -29,7 +29,7 @@ filename = "records_dict.csv"
 with open(filename, "w", newline="") as f:
     csvwriter = csv.DictWriter(f, fieldnames=fields)
     csvwriter.writeheader()  # zapis nagłówków, nazwy kolumn
-    csvwriter.writerow(dict_name)
+    csvwriter.writerow(dict_name)  # dane w słowniku
 
 products = [
     {"sku": 1, "exp_date": 'today', "price": 200},
@@ -43,7 +43,10 @@ products = [
 
 filename = "records_discount.csv"
 
+# list_products = ["sku", "exp_date", "price"]
+list_products = [key for key in products[0]]  # wyciąga klucze
+
 with open(filename, "w", newline="") as f:
-    csvwriter = csv.DictWriter(f, fieldnames=fields)
+    csvwriter = csv.DictWriter(f, fieldnames=list_products)
     csvwriter.writeheader()  # zapis nagłówków, nazwy kolumn
-    csvwriter.writerow(dict_name)
+    csvwriter.writerows(products)  # writerows, podajemy listę słowników
