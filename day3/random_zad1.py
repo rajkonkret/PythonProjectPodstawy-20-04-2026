@@ -18,9 +18,11 @@ print(lista[random.randrange(len(lista))])  # liczba 49
 
 print(random.choice(lista))  # 49 element z listy, losuje jeden element
 
+lista_kul = list(range(1, 50))
 for _ in range(6):
-    lista_kul = list(range(1, 50))
     # print(lista_kul)
     kula = random.choice(lista_kul)
     lista_kul.remove(kula)
     print(kula)
+
+print(random.choices(lista_kul, k=6))
