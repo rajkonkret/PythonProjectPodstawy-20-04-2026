@@ -37,3 +37,13 @@ print(type(object_data))  # <class 'datetime.datetime'>
 # tomorrow = today + 1  # TypeError: unsupported operand type(s) for +: 'datetime.date' and 'int'
 tomorrow = today + timedelta(days=1)
 print(tomorrow)  # 2026-04-23
+
+product = [
+    {"sku": 1, "exp_date": today, "price": 200},
+    {"sku": 2, "exp_date": today, "price": 100},
+    {"sku": 3, "exp_date": today, "price": 50},
+    {"sku": 4, "exp_date": today, "price": 200},
+    {"sku": 5, "exp_date": tomorrow, "price": 199.99},
+    {"sku": 6, "exp_date": tomorrow, "price": 2100},
+    {"sku": 7, "exp_date": today, "price": 1200},
+]
