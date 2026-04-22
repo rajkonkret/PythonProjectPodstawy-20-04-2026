@@ -176,3 +176,23 @@ for i, w in zip(imiona, wiek):
 # Marek 38
 
 # 0 Radek 44
+for i in enumerate(zip(imiona, wiek)):
+    print(i)
+# (0, ('Radek', 44))
+# (1, ('Tomek', 56))
+# (2, ('Agata', 23))
+# (3, ('Marek', 38))
+a, b = (3, ('Marek', 38))
+print(a, b)  # 3 ('Marek', 38)
+c, d = ('Marek', 38)
+print(c, d)
+
+a, (c, d) = (3, ('Marek', 38))
+print(a, c, d)  # 3 Marek 38
+
+for i, (o, w) in enumerate(zip(imiona, wiek)):
+    print(i, o, w)
+# 0 Radek 44
+# 1 Tomek 56
+# 2 Agata 23
+# 3 Marek 38
