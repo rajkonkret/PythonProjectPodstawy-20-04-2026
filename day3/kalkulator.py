@@ -7,6 +7,8 @@ while True:
     print("""
     1. Dodawanie
     2. Odejmowanie
+    3. Mnożenie
+    4. Dzielenie
     5. Koniec
     """)
 
@@ -15,10 +17,21 @@ while True:
     if odp == "5":
         break
 
-    a = float(input("Podaj pierwszą liczbę"))
-    b = float(input("podaj drugą lizcbę"))
+    try:
+        a = float(input("Podaj pierwszą liczbę:"))
+        b = float(input("podaj drugą liczbę:"))
 
-    if odp == "1":
-        pass
-    elif odp == "2":
-        pass
+        if odp == "1":
+            print(f"Dodawanie: {a} + {b} = {a + b}")
+        elif odp == "2":
+            pass
+        elif odp == "3":
+            pass
+        elif odp == "4":
+            print(f"Dzielenie: {a} / {b} = {a / b}")
+    except ZeroDivisionError:
+        print("Bład! Nie dziel przez zero!")
+    except Exception as e:
+        print("Bład:", e)
+    finally:  # wykona się zawsze
+        print("Obliczenia zostały wykonane")
