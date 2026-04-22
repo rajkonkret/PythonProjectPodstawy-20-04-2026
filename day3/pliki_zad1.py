@@ -17,7 +17,7 @@
 
 # w - tworzy nowy plik
 # gdy plik istnieje zostania nadpisany (skasowany)
-with open("test.log", "w") as f:  # pod f dostaniemy ten filehandler
+with open("test.log", "w", encoding='utf-8') as f:  # pod f dostaniemy ten filehandler
     f.write("Powitanie\n")
     f.write("Jeszcze jedno\n")
 
@@ -26,16 +26,28 @@ with open("test.log", "w") as f:  # pod f dostaniemy ten filehandler
 # x - tworzy nowy plik
 # jesli juz istnieje dostaniemy błąd
 # FileExistsError: [Errno 17] File exists: 'test.log'
-# with open("test.log", "x") as f:  # pod f dostaniemy ten filehandler
+# with open("test.log", "x",  encoding='utf-8') as f:  # pod f dostaniemy ten filehandler
 #     f.write("Powitanie\n")
 #     f.write("Jeszcze jedno\n")
 
 # skasuje plik i na nowo utworzy
-with open("test.log", "w") as f:  # pod f dostaniemy ten filehandler
+with open("test.log", "w", encoding='utf-8') as f:  # pod f dostaniemy ten filehandler
     f.write("Parametr 1\n")
     f.write("Parametr 1\n")
 
-with open("test.log", "a") as f:  # pod f dostaniemy ten filehandler
+with open("test.log", "a", encoding='utf-8') as f:  # pod f dostaniemy ten filehandler
     f.write("Dodane 1\n")
     f.write("Dodane 2\n")
     f.write("Dopisane 2\n")
+    f.write("Dośdane 2\n")
+
+with open('test.log', "r", encoding='utf-8') as file:
+    lines = file.read()  # wczytanie danych z pliku
+
+print(lines)
+# Parametr 1
+# Parametr 1
+# Dodane 1
+# Dodane 2
+# Dopisane 2
+# Dośdane 2
