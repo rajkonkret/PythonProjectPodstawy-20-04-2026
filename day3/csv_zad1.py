@@ -42,3 +42,8 @@ products = [
 ]
 
 filename = "records_discount.csv"
+
+with open(filename, "w", newline="") as f:
+    csvwriter = csv.DictWriter(f, fieldnames=fields)
+    csvwriter.writeheader()  # zapis nagłówków, nazwy kolumn
+    csvwriter.writerow(dict_name)
