@@ -25,4 +25,7 @@ for _ in range(6):
     lista_kul.remove(kula)
     print(kula)
 
-print(random.choices(lista_kul, k=6))
+print(random.choices(lista_kul, k=6))  # [49, 38, 48, 49, 16, 12], z powtórzeniami
+
+print(random.sample(lista_kul, k=6))  # [26, 13, 17, 44, 45, 41], bez powtórzen
+print(random.sample(lista_kul, 6))  # [14, 19, 11, 25, 48, 20], bez powtórzen
