@@ -7,7 +7,15 @@ fields = []
 rows = []
 
 with open(filename, "r") as csv_f:
-    csvreader = csv.reader(csv_f, delimiter=";")
+    dialect = csv.Sniffer().sniff(csv_f.read(1024))
+    print(dialect.delimiter)  # ;
+    print(dialect.quotechar)  # "
+
+    # StopIteration - skonczyły sie dane w iteratorze
+    csv_f.seek(0)  # powrót na początek odczytu
+
+    # csvreader = csv.reader(csv_f, delimiter=";")
+    csvreader = csv.reader(csv_f, delimiter=dialect.delimiter)
 
     print(csvreader)  # <_csv.reader object at 0x000001F41DE67D60> iterator
 
