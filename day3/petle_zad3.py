@@ -41,3 +41,4 @@ while password != 'secret':  # != - różne
 # Podaj ponownieDSDAFS
 # Podaj ponownieSECRET
 # Podaj ponowniesecret
+
