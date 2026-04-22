@@ -119,6 +119,7 @@ for p in enumerate(imiona):
 # (2, 'Agata')
 # (3, 'Marek') ->  3 Marek
 
+# rozpakowanie krotki
 a, b = (3, 'Marek')
 print(a, b)  # 3 Marek
 
@@ -135,3 +136,5 @@ for i, o in enumerate(imiona, start=1):
 # 2 Tomek
 # 3 Agata
 # 4 Marek
+
+imiona = ["Radek", "Tomek", "Agata", "Marek"]
