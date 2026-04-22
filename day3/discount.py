@@ -38,7 +38,7 @@ print(type(object_data))  # <class 'datetime.datetime'>
 tomorrow = today + timedelta(days=1)
 print(tomorrow)  # 2026-04-23
 
-product = [
+products = [
     {"sku": 1, "exp_date": today, "price": 200},
     {"sku": 2, "exp_date": today, "price": 100},
     {"sku": 3, "exp_date": today, "price": 50},
@@ -47,3 +47,20 @@ product = [
     {"sku": 6, "exp_date": tomorrow, "price": 2100},
     {"sku": 7, "exp_date": today, "price": 1200},
 ]
+
+for p in products:
+    # print(p)
+    # print(p["exp_date"])
+
+    # if p['exp_date'] == today:
+    #     pass
+
+    if p["exp_date"] != today:
+        continue  # końćzy biezace wykonanie pętli, pobiera kolejny eleemnt
+
+    p['price'] *= 0.8  # price = price * 0.8
+
+    print(f"""
+Price for sku: {p['sku']}
+is now: {p['price']:.2f}
+""")
