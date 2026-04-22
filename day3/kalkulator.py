@@ -14,7 +14,10 @@ while True:
 
     odp = input("Podaj wybraną opcję:")  # str
 
-    if odp == "5":
+    # if odp == "5":
+    #     break
+
+    if odp not in ["1", "2", "3", "4"]:
         break
 
     try:
@@ -31,7 +34,7 @@ while True:
             print(f"Dzielenie: {a} / {b} = {a / b}")
     except ZeroDivisionError:
         print("Bład! Nie dziel przez zero!")
-    except Exception as e:
+    except Exception as e:  # każdy inny błąd
         print("Bład:", e)
     finally:  # wykona się zawsze
         print("Obliczenia zostały wykonane")
