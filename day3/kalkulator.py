@@ -38,3 +38,21 @@ while True:
         print("Bład:", e)
     finally:  # wykona się zawsze
         print("Obliczenia zostały wykonane")
+
+print(50 * "-")
+wyr = input("Podaj wyrażenie  do obliczenia:")
+print(eval(wyr))
+# Podaj wyrażenie  do obliczenia:>? 4+6
+# 10
+a = float(input("Podaj pierwszą liczbę:"))
+b = float(input("podaj drugą liczbę:"))
+znak = input("Wprowadź znak: (+,-,*,/)")
+wyr = f"{a} {znak} {b}"
+print(eval(wyr))
+# Podaj pierwszą liczbę:>? 1
+# podaj drugą liczbę:>? 2
+# Wprowadź znak: (+,-,*,/)>? +
+# 3.0
+print(eval("5 + 7"))
+# print(eval("5 + 7"))
+# 12
