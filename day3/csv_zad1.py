@@ -47,6 +47,6 @@ filename = "records_discount.csv"
 list_products = [key for key in products[0]]  # wyciąga klucze
 
 with open(filename, "w", newline="") as f:
-    csvwriter = csv.DictWriter(f, fieldnames=list_products)
+    csvwriter = csv.DictWriter(f, fieldnames=list_products, delimiter=";")
     csvwriter.writeheader()  # zapis nagłówków, nazwy kolumn
     csvwriter.writerows(products)  # writerows, podajemy listę słowników
