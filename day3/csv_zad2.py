@@ -15,7 +15,11 @@ with open(filename, "r") as csv_f:
     csv_f.seek(0)  # powrót na początek odczytu
 
     # csvreader = csv.reader(csv_f, delimiter=";")
-    csvreader = csv.reader(csv_f, delimiter=dialect.delimiter)
+    csvreader = csv.reader(
+        csv_f,
+        delimiter=dialect.delimiter,
+        quotechar=dialect.quotechar
+    )
 
     print(csvreader)  # <_csv.reader object at 0x000001F41DE67D60> iterator
 
