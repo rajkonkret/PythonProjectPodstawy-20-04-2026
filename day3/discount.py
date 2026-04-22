@@ -27,3 +27,7 @@ print(type(formated_time))  # <class 'str'>
 formated_time_12h = datetime.now().strftime("%I:%M:%S %p")
 print(formated_time_12h)  # 12:46:22 PM
 print(type(formated_time_12h))  # <class 'str'>
+
+object_data = datetime.now().strptime("22/04/2026", "%d/%m/%Y")
+print(object_data)  # 2026-04-22 00:00:00
+print(type(object_data))  # <class 'datetime.datetime'>
