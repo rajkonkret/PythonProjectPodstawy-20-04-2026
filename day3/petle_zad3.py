@@ -30,3 +30,14 @@ while licznik < 10:
 # Komunikat 3 !!!
 # Komunikat 3 !!!
 # Komunikat 3 !!!
+
+password = input("Podaj hasło:")
+while password != 'secret':  # != - różne
+    password = input("Podaj ponownie")
+# Podaj hasło:asad
+# Podaj ponownieaDSAD
+# Podaj ponownieaaS
+# Podaj ponownieWQE
+# Podaj ponownieDSDAFS
+# Podaj ponownieSECRET
+# Podaj ponowniesecret
