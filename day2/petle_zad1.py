@@ -42,3 +42,11 @@ for i in range(len(lista3)):
 
 for c in lista3:  # podstawia wszystkie kolejne elemnty z listy
     print(c)
+
+lista_nazwy = ["Ala", "Tomek", 'Zenek', 'Basia']
+for p in lista_nazwy:
+    print(p)
+# Ala
+# Tomek
+# Zenek
+# Basia
