@@ -50,3 +50,26 @@ for p in lista_nazwy:
 # Tomek
 # Zenek
 # Basia
+
+for c in lista3:
+    if c > 4:
+        print(c, 'Większe od 4')
+    elif c == 4:
+        print(c, "Równe 4")
+    else:
+        print(c, "Mniejsze niż 4")
+
+    print(c)  # za każdym przejsciem pętli
+
+print("Po zakończeniu pętli")
+# 0 Mniejsze niż 4
+# 0
+# 2 Mniejsze niż 4
+# 2
+# 4 Równe 4
+# 4
+# 6 Większe od 4
+# 6
+# 8 Większe od 4
+# 8
+# Po zakończeniu pętli
