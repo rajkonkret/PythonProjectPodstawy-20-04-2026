@@ -26,6 +26,7 @@ print(type(dict_name))
 
 filename = "records_dict.csv"
 
-with open(filename, "w") as f:
+with open(filename, "w", newline="") as f:
     csvwriter = csv.DictWriter(f, fieldnames=fields)
-
+    csvwriter.writeheader()  # zapis nagłówków, nazwy kolumn
+    csvwriter.writerow(dict_name)
