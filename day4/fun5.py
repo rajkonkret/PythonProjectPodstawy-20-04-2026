@@ -30,3 +30,13 @@ kantor_usd()  # Wymieniłem: 0 usd na: 0.0 pln
 kantor_usd()  # Wymieniłem: 0 usd na: 0.0 pln
 kantor_usd(50000)  # Wymieniłem: 50000 usd na: 181000.0 pln
 kantor_usd(1)  # Wymieniłem: 1 usd na: 3.62 pln
+
+waluta1 = input("Podaj walute:")
+wymiana = kantor(waluta1.strip().casefold())
+kwota1 = input("Podaj kwote:")
+print(wymiana(int(kwota1)))
+# Podaj walute:eur
+# Otwieram kantor
+# Podaj kwote:110000
+# Wymieniłem: 110000 eur na: 463100.0 pln
+# None
