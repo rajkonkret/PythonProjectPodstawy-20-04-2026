@@ -23,6 +23,17 @@ class Human:
         print(f"Nazywam się: {self.imie}")
         # print(f"Nazywam się: {cz1.imie}") podstawia obiekt klasy
 
+    # napisac metode
+    # w zależności plci k - m
+    # ruszyłem w drogę
+    # ruszyłam w droge
+    def ruszaj(self):
+
+        if self.plec == "m":
+            print("Ruszył em w drogę")
+        else:
+            print("Ruszył am w drogę")
+
 
 # tworzenie obiektu
 cz1 = Human()
@@ -60,3 +71,20 @@ cz2.wiek = 45
 print(cz2.imie)  # Anna
 print(cz2.wiek)  # 45
 print(cz2.plec)  # k
+
+cz1.powitanie()
+cz2.powitanie()
+# Nazywam się: Radek
+# Nazywam się: Anna
+
+cz1.ruszaj()
+cz2.ruszaj()
+# Ruszył em w drogę
+# Ruszył am w drogę
+
+# obiekty tej samej klasy
+lista = [cz1, cz2]
+for i in lista:
+    i.ruszaj()
+# Ruszył em w drogę
+# Ruszył am w drogę
