@@ -15,3 +15,25 @@ import json
 person_dict = {'name': 'Radek', 'age': 40, 'czy_pali': None}
 print(person_dict)  # {'name': 'Radek', 'age': 40, 'czy_pali': None}
 print(type(person_dict))  # <class 'dict'>
+
+# zapis danych jako json
+with open('nasze_dane.json', "w") as f:
+    json.dump(person_dict, f)
+# {"name": "Radek", "age": 40, "czy_pali": null}
+
+# beautify
+with open('nasze_dane_b.json', "w") as f:
+    json.dump(person_dict, f, indent=4)
+# {
+#     "name": "Radek",
+#     "age": 40,
+#     "czy_pali": null
+# }
+
+with open('nasze_dane_sorted.json', "w") as f:
+    json.dump(person_dict, f, indent=4, sort_keys=True)
+# {
+#     "age": 40,
+#     "czy_pali": null,
+#     "name": "Radek"
+# }
