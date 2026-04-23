@@ -48,3 +48,10 @@ print(cz1.wiek)  # 55
 print(cz1.plec)  # m
 
 # drugi obiekt innej płci
+cz2 = Human()
+cz2.imie = "Anna"
+cz2.wiek = 45
+
+print(cz2.imie)  # Anna
+print(cz2.wiek)  # 45
+print(cz2.plec)  # k
