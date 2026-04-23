@@ -14,6 +14,10 @@ class Human:
     Klasa Human opisująca człowieka w Pythonie
     """
 
+    imie = ""
+    wiek = None
+    plec = "k"
+
 
 # tworzenie obiektu
 cz1 = Human()
@@ -25,3 +29,22 @@ print(Human.__doc__)  # Klasa Human opisująca człowieka w Pythonie
 # cd .. - wyjscie do wyższego katalogu
 # pydoc -b - serwer dokumentacji
 # pydoc -w  kl1 - tworzy plik html z dokumentacją
+
+print(cz1)
+# <__main__.Human object at 0x0000023757D78980>
+print(cz1.imie)
+print(cz1.wiek)
+print(cz1.plec)
+#
+# None
+# k
+
+cz1.imie = "Radek"
+cz1.wiek = 55
+cz1.plec = "m"
+
+print(cz1.imie)  # Radek
+print(cz1.wiek)  # 55
+print(cz1.plec)  # m
+
+# drugi obiekt innej płci
