@@ -28,3 +28,4 @@ xfun()
 
 yfun = xfun()  # fun3 at 0x0000029D31663530>
 print(yfun)  # <function fun1.<locals>.fun2.<locals>.fun3 at 0x0000029D31663530>
+yfun()
