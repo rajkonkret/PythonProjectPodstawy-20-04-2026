@@ -32,4 +32,4 @@ print(wiek(25))  # dorosły
 
 lista = [1, 2, 14, 24, 50, 67, 80, 100, 200, 500]
 
-# stworzyc listę, do listy zapisać elementy tej listy, pomnoże * 2
+# stworzyc listę, do listy zapisać elementy tej listy, pomnożone * 2
