@@ -41,3 +41,5 @@ def napis():
 
 
 print(napis())
+
+print("\033[31mHello\033[0m")
