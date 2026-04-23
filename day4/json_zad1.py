@@ -37,3 +37,23 @@ with open('nasze_dane_sorted.json', "w") as f:
 #     "czy_pali": null,
 #     "name": "Radek"
 # }
+# https://www.postman.com/
+
+# wczytanie danych do słownika
+with open('nasze_dane.json', "r") as file:
+    data = json.load(file)
+
+print(data)  # {'name': 'Radek', 'age': 40, 'czy_pali': None}
+print(type(data))  # <class 'dict'>
+
+print("Imię pacjenta:", data['name'])
+# Imię pacjenta: Radek
+print("Wiek pacjenta:", data['age'])
+# Wiek pacjenta: 40
+
+# zamiana słownika na json (tekst)
+json_text = json.dumps(data)
+print(json_text)  # {"name": "Radek", "age": 40, "czy_pali": null}
+print(type(json_text))  # <class 'str'>
+
+# zamiana jsona na słownika
