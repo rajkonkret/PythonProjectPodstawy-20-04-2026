@@ -18,6 +18,11 @@ class Human:
     wiek = None
     plec = "k"
 
+    # self - obiekt
+    def powitanie(self):
+        print(f"Nazywam się: {self.imie}")
+        # print(f"Nazywam się: {cz1.imie}") podstawia obiekt klasy
+
 
 # tworzenie obiektu
 cz1 = Human()
