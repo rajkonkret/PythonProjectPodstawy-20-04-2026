@@ -57,3 +57,6 @@ print(json_text)  # {"name": "Radek", "age": 40, "czy_pali": null}
 print(type(json_text))  # <class 'str'>
 
 # zamiana jsona na słownika
+dict_json = json.loads(json_text)
+print(dict_json)  # {'name': 'Radek', 'age': 40, 'czy_pali': None}
+print(type(dict_json))  # <class 'dict'>
