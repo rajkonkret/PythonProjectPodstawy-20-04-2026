@@ -3,7 +3,7 @@
 # metody - funkcja w klasie
 # obiekt - instancja klasy
 # klasa musi zostac najpierw zadeklarowana
-# tworzenie obiektu uruchamia funkcję inicjalizującą (konstruktor) __init__
+# tworzenie obiektu uruchamia metodę inicjalizującą (konstruktor) __init__
 # __del__ - destruktor
 # paradygmaty -> hermetyzacja, dziedziczenie, polimorfizm, abstrakcja
 
