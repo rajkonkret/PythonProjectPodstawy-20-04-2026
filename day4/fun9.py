@@ -30,6 +30,41 @@ print(wiek(17))  # nastolatek
 print(wiek(18))  # dorosły
 print(wiek(25))  # dorosły
 
+# mapowanie danych
 lista = [1, 2, 14, 24, 50, 67, 80, 100, 200, 500]
 
 # stworzyc listę, do listy zapisać elementy tej listy, pomnożone * 2
+l1 = []
+for i in lista:
+    l1.append(i * 2)
+print(l1)  # [2, 4, 28, 48, 100, 134, 160, 200, 400, 1000]
+
+l2 = [i * 2 for i in lista]
+print(l2)  # [2, 4, 28, 48, 100, 134, 160, 200, 400, 1000]
+
+
+def zmien(x):
+    return x * 2
+
+
+l3 = []
+for i in lista:
+    l3.append(zmien(i))
+print(l3)
+# [2, 4, 28, 48, 100, 134, 160, 200, 400, 1000]
+
+# map() - wykonuje funkcję na kolejnych argumentach kolekcji
+# funkcje wyższego rzędu, jako argument przyjmuje inną funkcję
+
+print(f"Zastosowanie map(): {list(map(zmien, lista))}")
+# Zastosowanie map(): [2, 4, 28, 48, 100, 134, 160, 200, 400, 1000]
+
+# użycie lambdy jako funkcja anonimowa
+print(f"Zastosowanie map(): {list(map(lambda x: x * 2, lista))}")
+print(f"Zastosowanie map(): {list(map(lambda x: x * 4, lista))}")
+print(f"Zastosowanie map(): {list(map(lambda x: x * 5, lista))}")
+print(f"Zastosowanie map(): {list(map(lambda x: x * 6, lista))}")
+# Zastosowanie map(): [2, 4, 28, 48, 100, 134, 160, 200, 400, 1000]
+# Zastosowanie map(): [4, 8, 56, 96, 200, 268, 320, 400, 800, 2000]
+# Zastosowanie map(): [5, 10, 70, 120, 250, 335, 400, 500, 1000, 2500]
+# Zastosowanie map(): [6, 12, 84, 144, 300, 402, 480, 600, 1200, 3000]
