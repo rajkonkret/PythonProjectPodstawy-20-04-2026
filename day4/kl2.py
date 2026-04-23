@@ -39,6 +39,7 @@ class Human:
         else:
             print("Ruszył am w drogę")
 
+
 cz1 = Human("Radek", 45, 189, "m")
 print(cz1.imie)
 print(cz1.wiek)
@@ -55,3 +56,12 @@ cz1.wypisz_wzrost()
 # Mam 189 cm wzrostu.
 
 # obiekt innej płci, przetestowac wszytskie metody na nim
+cz2 = Human("Annna", 45, 170)
+cz2.wypisz_wzrost()
+cz2.wypisz_wiek()
+cz2.powitanie()
+cz2.ruszaj()
+# Mam 170 cm wzrostu.
+# Mam 45 lat.
+# Nazywam się: Annna
+# Ruszył am w drogę
