@@ -39,7 +39,7 @@ class Human:
         else:
             print("Ruszył am w drogę")
 
-    # metoda opisowa
+    # metoda opisowa print, str
     def __str__(self):
         return f"{self.imie}, {self.wiek}, {self.wzrost}"
 
