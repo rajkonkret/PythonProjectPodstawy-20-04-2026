@@ -39,6 +39,10 @@ class Human:
         else:
             print("Ruszył am w drogę")
 
+    # metoda opisowa
+    def __str__(self):
+        return f"{self.imie}, {self.wiek}, {self.wzrost}"
+
 
 cz1 = Human("Radek", 45, 189, "m")
 print(cz1.imie)
@@ -65,3 +69,6 @@ cz2.ruszaj()
 # Mam 45 lat.
 # Nazywam się: Annna
 # Ruszył am w drogę
+
+print(cz1)  # <__main__.Human object at 0x000001E830299BE0>
+# Radek, 45, 189 - po dopisaniu metody __str__
