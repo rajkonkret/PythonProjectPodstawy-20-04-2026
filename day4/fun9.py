@@ -60,6 +60,7 @@ print(f"Zastosowanie map(): {list(map(zmien, lista))}")
 # Zastosowanie map(): [2, 4, 28, 48, 100, 134, 160, 200, 400, 1000]
 
 # użycie lambdy jako funkcja anonimowa
+# funkcja użyta w miejscu deklaracji
 print(f"Zastosowanie map(): {list(map(lambda x: x * 2, lista))}")
 print(f"Zastosowanie map(): {list(map(lambda x: x * 4, lista))}")
 print(f"Zastosowanie map(): {list(map(lambda x: x * 5, lista))}")
