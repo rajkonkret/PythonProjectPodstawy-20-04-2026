@@ -15,4 +15,18 @@ def kantor(waluta):
     if waluta == "eur":
         return eur
     else:
-        return usd
+        return usd  # zwracamy adres funkcji
+
+
+kantor_usd = kantor("usd")
+kantor_eur = kantor("eur")
+
+kantor_eur()  # Wymieniłem: 0 eur na: 0.0 pln
+kantor_eur()  # Wymieniłem: 0 eur na: 0.0 plnł
+kantor_eur(1000)  # Wymieniłem: 1000 eur na: 4210.0 pln
+kantor_eur(200)  # Wymieniłem: 200 eur na: 842.0 pln
+
+kantor_usd()  # Wymieniłem: 0 usd na: 0.0 pln
+kantor_usd()  # Wymieniłem: 0 usd na: 0.0 pln
+kantor_usd(50000)  # Wymieniłem: 50000 usd na: 181000.0 pln
+kantor_usd(1)  # Wymieniłem: 1 usd na: 3.62 pln
