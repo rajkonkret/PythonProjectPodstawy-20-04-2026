@@ -23,6 +23,11 @@ try:
     c.execute(query)
     conn.commit()
 
+    # insert
+    insert = "INSERT INTO developers (id,name,email,salary) VALUES (1,'Radek', 'raj@raj.pl', 10000);"
+    c.execute(insert)
+    conn.commit()
+
 except sqlite3.Error as e:
     print("Bład podłaczenia danych:", e)
 finally:
