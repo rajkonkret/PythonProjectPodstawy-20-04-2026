@@ -51,6 +51,16 @@ try:
         print(row)
     # (1, 'Radek', 'raj@raj.pl', 10000.0)
     # (2, 'Radek', 'raj1@raj.pl', 10000.0)
+
+    update = """
+    UPDATE developers SET salary=11000 WHERE id=1;
+             """
+    c.execute(update)
+    conn.commit()
+    # (1, 'Radek', 'raj@raj.pl', 11000.0)
+    # (2, 'Radek', 'raj1@raj.pl', 10000.0)
+
+
 except sqlite3.Error as e:
     print("Bład podłaczenia danych:", e)
 finally:
