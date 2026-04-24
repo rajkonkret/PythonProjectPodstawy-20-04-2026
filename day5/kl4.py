@@ -12,3 +12,7 @@ class Ptak:
 
         self.gatunek = gatunek
         self.szybkosc = szybkosc
+
+    def latam(self):
+        print("Tu", self.gatunek, "Lecę z szybkością:", self.szybkosc, "km/h")
+
