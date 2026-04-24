@@ -1,7 +1,5 @@
 from abc import ABC, abstractmethod
 
-from day1.pierwszy import name
-
 
 # klasa abstrakcyjna
 # posiada metodę abstrakcyjna
