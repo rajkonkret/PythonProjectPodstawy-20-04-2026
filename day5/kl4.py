@@ -16,9 +16,27 @@ class Ptak:
     def latam(self):
         print("Tu", self.gatunek, "Lecę z szybkością:", self.szybkosc, "km/h")
 
+    def wydaj_odglos(self):
+        pass
+
     # __str__
     def __str__(self):
         return f"{self.gatunek}, {self.szybkosc}"
+
+
+class Kura(Ptak):
+    """
+    klasa Kura, dziedziczy po klasie Ptak
+    """
+
+    def __init__(self, gatunek):
+        super().__init__(gatunek, 0)  # musimy wywołać super(), super() - klasa nadrzędna
+
+    def latam(self):
+        print("Tu", self.gatunek, "Ja nie latam.")
+
+    def wydaj_odglos(self):
+        print("ko ko ko ko ko")
 
 
 or1 = Ptak("Orzeł", 50)
