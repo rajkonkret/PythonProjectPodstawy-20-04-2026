@@ -10,5 +10,4 @@ def info():
 # __main__
 # pakiet.fun
 if __name__ == '__main__':
-
     info()  # v3.456.90.0000
