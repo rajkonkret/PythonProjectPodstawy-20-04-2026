@@ -38,3 +38,13 @@ session = Session()
 new_user = User(name="Jan", age=30)
 session.add(new_user)  # INSERT INTO users (name, age) VALUES (?, ?)  ('Jan', 30)
 session.commit()
+
+# odczyt z bazy
+users = session.query(User).all()
+for user in users:
+    print(f"User: {user.id}, {user.name}, {user.age}")
+#
+# User: 1, Jan, 30
+# User: 2, Jan, 30
+# SELECT users.id AS users_id, users.name AS users_name, users.age AS users_age
+# FROM users
