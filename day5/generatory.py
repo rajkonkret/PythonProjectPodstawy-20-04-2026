@@ -1,4 +1,6 @@
 # generator - generuje dane
+import time
+
 
 def kwadrat(n):
     for x in range(n):
@@ -33,3 +35,24 @@ print(next(kwa))  # 9
 print(next(kwa))  # 16
 
 # print(next(kwa))  # StopIteration - generator zakońćzył pracę
+
+kwa2 = kwadrat2(5)
+kwa3 = kwadrat2(10)
+
+print(next(kwa2))
+print(next(kwa2))
+print(next(kwa2))
+
+print(next(kwa3))
+print(next(kwa3))
+print(next(kwa3))
+
+print(next(kwa2))
+
+print(next(kwa3))
+
+print(list(kwa3))  # [16, 25, 36, 49, 64, 81]
+
+for i in kwadrat2(10):
+    print(i)
+    time.sleep(1) # symulujemy długotrwałe przetwarzenie danych
