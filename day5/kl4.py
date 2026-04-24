@@ -1,4 +1,9 @@
-class Ptak:
+from abc import ABC, abstractmethod
+
+
+# klasa abstrakcyjna
+# posiada metodę abstrakcyjna
+class Ptak(ABC):
     """
     Klasa opsująca ptaka w Pythonie
     """
@@ -16,6 +21,8 @@ class Ptak:
     def latam(self):
         print("Tu", self.gatunek, "Lecę z szybkością:", self.szybkosc, "km/h")
 
+    # metoda abstrakcyjna
+    @abstractmethod
     def wydaj_odglos(self):
         pass
 
