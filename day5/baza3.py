@@ -4,6 +4,18 @@
 # sqlalchemy - orm w pythonie
 from sqlalchemy import create_engine, Column, Integer, String
 from sqlalchemy.orm import declarative_base, sessionmaker
+
 # pip install sqlalchemy
 
+engine = create_engine("sqlite:///test.db")
 
+# klasa bazowa
+Base = declarative_base()
+
+
+# model, encja - klasa odwzorowujaca tabelę w bazie danych
+class User(Base):
+    __tablename__ = "users"
+    id = Column(Integer, primary_key=True)
+    name = Column(String)
+    age = Column(Integer)
