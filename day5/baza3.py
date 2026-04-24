@@ -7,7 +7,7 @@ from sqlalchemy.orm import declarative_base, sessionmaker
 
 # pip install sqlalchemy
 
-engine = create_engine("sqlite:///test.db")
+engine = create_engine("sqlite:///test.db", echo=True)  # echo - logowanie bazy danych
 
 # klasa bazowa
 Base = declarative_base()
@@ -19,3 +19,13 @@ class User(Base):
     id = Column(Integer, primary_key=True)
     name = Column(String)
     age = Column(Integer)
+
+
+# tworzenie tabeli w bazie danych
+Base.metadata.create_all(bind=engine)
+# CREATE TABLE users (
+# 	id INTEGER NOT NULL,
+# 	name VARCHAR,
+# 	age INTEGER,
+# 	PRIMARY KEY (id)
+# )
