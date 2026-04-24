@@ -58,7 +58,7 @@ print(cz1.plec)
 cz1.imie = "Radek"
 cz1.wiek = 55
 cz1.plec = "m"
-
+print(f"Nazywam się: {cz1.imie}")
 print(cz1.imie)  # Radek
 print(cz1.wiek)  # 55
 print(cz1.plec)  # m
