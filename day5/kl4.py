@@ -23,4 +23,4 @@ class Ptak:
 
 or1 = Ptak("Orzeł", 50)
 print(or1)  # <__main__.Ptak object at 0x000001A874D78980>, Orzeł, 50
-
+or1.latam()  # Tu Orzeł Lecę z szybkością: 50 km/h
