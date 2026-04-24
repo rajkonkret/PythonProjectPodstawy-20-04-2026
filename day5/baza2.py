@@ -60,6 +60,14 @@ try:
     # (1, 'Radek', 'raj@raj.pl', 11000.0)
     # (2, 'Radek', 'raj1@raj.pl', 10000.0)
 
+    delete = """
+    DELETE FROM developers WHERE id=1;
+             """
+    c.execute(delete)
+    conn.commit()
+    # Baza  danych zostałą podłaczona
+    # (2, 'Radek', 'raj1@raj.pl', 10000.0)
+    # Połaczenie zostało zamknięte
 
 except sqlite3.Error as e:
     print("Bład podłaczenia danych:", e)
